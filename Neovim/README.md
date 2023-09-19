@@ -21,6 +21,12 @@ brew install git
 brew install fzf
 ```
 
+## 安装 rg
+
+```bash
+brew install ripgrep
+```
+
 ## 安装 iTerm2
 
 ```bash
