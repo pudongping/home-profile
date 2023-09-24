@@ -16,4 +16,6 @@ local opts = {
         colorscheme = { "tokyonight-storm" },
     },
 }
+
+-- 在同级目录下存在 `plugins` 目录时，会自动合并为一个大的 table （会自动读取 plugins 目录下所有的 `.lua` 文件）
 require("lazy").setup("plugins", opts)

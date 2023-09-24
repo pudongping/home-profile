@@ -9,6 +9,12 @@
 brew install neovim
 ```
 
+查看 neovim 版本号
+
+```bash
+nvim --version
+```
+
 ## 安装 git
 
 ```bash
@@ -48,7 +54,7 @@ brew install font-hack-nerd-font
 cd ~/Library/Fonts && ll
 ```
 
-对 iTerm2 设置字体。需要勾选 **Use a different font for non-ASCII text** 然后在 **Non-ASCII Font** 下选择 `Hack Nerd Font Mono` 字体。
+对 iTerm2 设置字体。需要勾选 **Use a different font for non-ASCII text** 来启动第二字体。然后在 **Non-ASCII Font** 下选择 `Hack Nerd Font Mono` 字体。
 可以参考下图所示。
 
 ![](./imgs/iterm2-setting-front.png)
@@ -71,16 +77,11 @@ cd $HOME/.config && rm -rf nvim
 
 ## 小技巧
 
-- 选择某个硬盘路径，按键盘 `gf` 两个字母时，可以直接使用 nvim 直接打开。然后可以通过 `Ctrl+o` 回退回来。光标对着网址路径，按键盘 `gx` 两个字母时，可以直接使用浏览器打开。
-
-## 用到的插件
-
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) 皮肤插件
+- 选择某个硬盘路径，按键盘 `gf` 两个字母时，可以直接使用 nvim 直接打开。然后可以通过 `Ctrl+o` 回退回来。光标对着网址路径，按键盘 `gx` 两个字母时，可以直接使用浏览器打开。可以通过 `Ctrl+i` 反向跳转。
 
 ## 常用指令
 
-```bash
-:Explore 列出当前目录下所有的文件
-:e filename 以 buffer 的形式打开新文件
-
-```
+| 指令   | 含义 | 模式  |
+|------| --- |-----|
+| :Explore | 列出当前目录下所有的文件 | n   |
+| :e filename | 以 buffer 的形式打开新文件 | n |
