@@ -31,6 +31,7 @@ option.updatetime = 50
 option.mouse = "a"
 option.undofile = true
 option.undodir = vim.fn.expand('$HOME/.local/share/nvim/undo')
+-- 在每个项目根目录下都可以新建 .nvim.lua 文件，自定义 neovim 的配置
 option.exrc = true
 option.wrap = false
 -- 打开纵向新窗口时，在右边显示
