@@ -17,6 +17,17 @@ option.number = true
 option.relativenumber = true
 option.wildmenu = true
 
+option.clipboard = "unnamed" -- 在 neovim 中使用复制粘贴时，和系统的剪切板互通
+-- 在 copy 后高亮
+vim.api.nvim_create_autocmd({ "TextYankPost" }, {
+    pattern = { "*" },
+    callback = function()
+        vim.highlight.on_yank({
+            timeout = 300,
+        })
+    end,
+})
+
 -- 搜索
 option.hlsearch = false -- 关闭搜索结果的高亮
 option.ignorecase = true -- 搜索不区分大小写
@@ -58,7 +69,7 @@ globals.mapleader = " " -- 设置 leader 键为空格键
 -- vim.keymap.set({ "n", "i", "v" }, "<Down>", "<Nop>")
 
 vim.keymap.set("n", "<A-Tab>", "<cmd>bNext<CR>")
-vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>") -- 关闭 buffer
+vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>") -- 关闭当前 buffer
 
 -- 按大写 J K 在视图模式下可以移动整块（单行或多行移动）
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

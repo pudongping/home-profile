@@ -85,3 +85,4 @@ cd $HOME/.config && rm -rf nvim
 |------| --- |-----|
 | :Explore | 列出当前目录下所有的文件 | n   |
 | :e filename | 以 buffer 的形式打开新文件 | n |
+| Ctrl+w 然后 h、j、k、l | 在分屏下上下左右切换屏幕 | n |
