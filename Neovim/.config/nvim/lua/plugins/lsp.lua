@@ -35,6 +35,20 @@ return {
             taplo = {},
             ruff_lsp = {},
             clangd = {},
+            gopls = {
+                cmd = {"gopls"},
+                filetypes = {"go", "gomod", "gowork", "gotmpl"},
+                -- root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+                settings = {
+                    gopls = {
+                        completeUnimported = true, -- 当我们使用一些 package 时，它会自动导入
+                        usePlaceholders = true, -- 可以在函数参数或者结构体字段中自动添加占位符
+                        analyses = {
+                            unusedparams = true, -- 有任何未使用的参数或函数，将会得到一个 warning
+                        },
+                    },
+                },
+            },
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>

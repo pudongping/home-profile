@@ -81,8 +81,20 @@ cd $HOME/.config && rm -rf nvim
 
 ## 常用指令
 
-| 指令   | 含义 | 模式  |
-|------| --- |-----|
-| :Explore | 列出当前目录下所有的文件 | n   |
-| :e filename | 以 buffer 的形式打开新文件 | n |
-| Ctrl+w 然后 h、j、k、l | 在分屏下上下左右切换屏幕 | n |
+| 指令                                                                  | 含义 | 模式  |
+|---------------------------------------------------------------------| --- |-----|
+| :Explore                                                            | 列出当前目录下所有的文件 | n   |
+| :e filename                                                         | 以 buffer 的形式打开新文件 | n |
+| Ctrl+w 然后 h、j、k、l                                                   | 在分屏下上下左右切换屏幕 | n |
+
+
+## 特定某些插件
+
+### 和 golang 相关的效率神器
+
+- [olexsmir/gopher.nvim](https://github.com/olexsmir/gopher.nvim) 给结构体添加指定标签名、自动为当前文件中的函数生成测试代码等
+- [ray-x/go.nvim](https://github.com/ray-x/go.nvim) 使用 go 时的插件
+
+### markdown
+
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) markdown 插件
