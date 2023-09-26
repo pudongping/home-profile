@@ -1,0 +1,53 @@
+# oh-my-zsh
+# 主题
+# ZSH_THEME="random"
+ZSH_THEME="jonathan"
+# 插件
+plugins=(
+	git
+	sudo
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+######################################
+
+# Go-Zero
+alias gzgapi="goctl api go -api *.api -dir ../ --style=goZero"
+alias gzgpb="goctl rpc protoc *.proto --go_out=../ --go-grpc_out=../ --zrpc_out=../ --style=goZero"
+
+######################################
+
+# set homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export HOMEBREW_NO_AUTO_UPDATE=true
+
+######################################
+
+# func
+function gitam() {
+    if [ -z "$1" ]; then
+        echo "Please provide a commit message."
+        return 1
+    fi
+    git add -A && git commit -sm "$1"
+}
+
+######################################
+
+# set nvim
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+######################################
+
+# set gvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+######################################
+
+# alias
+# 终端代理
+alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
