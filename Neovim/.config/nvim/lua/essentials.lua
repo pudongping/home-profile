@@ -16,6 +16,7 @@ option.smartindent = true
 option.number = true
 option.relativenumber = true
 option.wildmenu = true
+option.scrolloff = 5 -- 光标距离底部保持 5 行
 
 option.clipboard = "unnamed" -- 在 neovim 中使用复制粘贴时，和系统的剪切板互通
 -- 在 copy 后高亮
