@@ -1,8 +1,15 @@
 # [Neovim](https://github.com/neovim/neovim)
 
-- 插件管理器：[folke/lazy.nvim](https://github.com/folke/lazy.nvim)
+## 使用 Neovim
 
-## 使用 homebrew 安装 neovim
+本目录下有两套 neovim 的配置，均可直接使用。区别如下：
+
+- [nvim-config](./nvim-config) ：使用 [folke/lazy.nvim](https://github.com/folke/lazy.nvim) 作为插件管理器，找各种插件进行配置。
+- [oh-my-lazy-vim](./oh-my-lazy-vim)：使用 [LazyVim](https://www.lazyvim.org/installation) 作为配置模版，在此基础之上添加的各种插件。
+
+## 所需安装的软件
+
+### 使用 homebrew 安装 neovim
 
 ```bash
 # https://formulae.brew.sh/formula/neovim
@@ -15,31 +22,31 @@ brew install neovim
 nvim --version
 ```
 
-## 安装 git
+### 安装 git
 
 ```bash
 brew install git
 ```
 
-## 安装 fzf
+### 安装 fzf
 
 ```bash
 brew install fzf
 ```
 
-## 安装 rg
+### 安装 rg
 
 ```bash
 brew install ripgrep
 ```
 
-## 安装 iTerm2
+### 安装 iTerm2
 
 ```bash
 brew install iterm2
 ```
 
-## 安装字体 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#font-installation)
+### 安装字体 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#font-installation)
 
 > 方便显示一些小图标。
 
@@ -59,25 +66,29 @@ cd ~/Library/Fonts && ll
 
 ![](./imgs/iterm2-setting-front.png)
 
-## 使用配置
+## 如何使用配置？
+
+建议通过软连接的方式使用配置信息，自己的个人配置还可以通过版本管理软件 git 进行管理。
+
+比如，如果需要使用 `nvim-config` 目录下的配置信息时：
 
 ```bash
 # 直接通过建立软连接的方式使用（要使用绝对路径的方式）
 # eg：
-ln -s /Users/pudongping/glory/codes/code/home-profile/Neovim/.config/nvim $HOME/.config/nvim
+ln -s /Users/pudongping/glory/codes/code/home-profile/Neovim/nvim-config/nvim $HOME/.config/nvim
 # 或者使用如下方式，效果一样
-ln -s ~/glory/codes/code/home-profile/Neovim/.config/nvim/ ~/.config/nvim
+ln -s ~/glory/codes/code/home-profile/Neovim/nvim-config/nvim/ ~/.config/nvim
 
 # 查看建立关系
 ls -al $HOME/.config | grep nvim
 
-# 如果需要删除软连接的话（不直接使用 rm -rf $HOME/.config/nvim 是担心误删）
+# 如果需要删除软连接的话（不直接使用 rm -rf $HOME/.config/nvim 命令，是担心误删）
 cd $HOME/.config && rm -rf nvim
 ```
 
 ## 小技巧
 
-- 选择某个硬盘路径，按键盘 `gf` 两个字母时，可以直接使用 nvim 直接打开。然后可以通过 `Ctrl+o` 回退回来。光标对着网址路径，按键盘 `gx` 两个字母时，可以直接使用浏览器打开。可以通过 `Ctrl+i` 反向跳转。
+- 光标位于某个硬盘路径，按键盘 `gf` 两个字母时，可以直接使用 nvim 直接打开。然后可以通过 `Ctrl+o` 回退回来。光标对着网址路径，按键盘 `gx` 两个字母时，可以直接使用浏览器打开。可以通过 `Ctrl+i` 反向跳转。
 
 ## 常用指令
 
