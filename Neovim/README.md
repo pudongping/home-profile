@@ -105,6 +105,7 @@ cd $HOME/.config && rm -rf nvim
 
 > 我本地使用的是 `go version go1.16.3 darwin/amd64` 版本，因此安装 `gopls` 时，需要直接通过 `:MasonInstall gopls@v0.6.11` 安装特定版本。
 > 通过 `go install golang.org/x/tools/gopls@v0.6.11` 下载的 `gopls` 默认会在 `$GOPATH/bin` 目录下，但是通过 `Mason` 下载的 `gopls` 在 `~/.local/share/nvim/mason/packages/gopls` 目录下。
+> 同理，如果要安装 `gofumpt` 的话，也需要通过 `MasonInstall gofumpt@v0.3.0` 安装。
 
 - [olexsmir/gopher.nvim](https://github.com/olexsmir/gopher.nvim) 给结构体添加指定标签名、自动为当前文件中的函数生成测试代码等
 - [ray-x/go.nvim](https://github.com/ray-x/go.nvim) 使用 go 时的插件

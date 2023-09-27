@@ -5,3 +5,4 @@
 local option = vim.opt
 
 -- option.relativenumber = false
+option.winbar = "%=%m %f" -- 在缓冲区右上角显示文件的路径
