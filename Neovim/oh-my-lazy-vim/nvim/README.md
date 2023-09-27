@@ -5,15 +5,16 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## 常用快捷键
 
-| 快捷键      | 含义   | 模式 |
-|----------|------| --- |
-| gm       | 查看 markdown 文件 | N |
-| H        | 向左边切换 buffer | N |
-| L        | 向右边切换 buffer | N |
-| <Ctrl+h> | 向左边切换窗口 | N |
-| <Ctrl+j> | 向下边切换窗口 | N |
-| <Ctrl+k> | 向上边切换窗口 | N |
-| <Ctrl+l> | 向右边切换窗口 | N |
+| 快捷键        | 含义   | 模式 |
+|------------|------| --- |
+| gm         | 查看 markdown 文件 | N |
+| H          | 向左边切换 buffer | N |
+| L          | 向右边切换 buffer | N |
+| <Ctrl+h>   | 向左边切换窗口 | N |
+| <Ctrl+j>   | 向下边切换窗口 | N |
+| <Ctrl+k>   | 向上边切换窗口 | N |
+| <Ctrl+l>   | 向右边切换窗口 | N |
+| <leader>ql | 恢复关闭之前的窗口布局 | N |
 
 ---
 
