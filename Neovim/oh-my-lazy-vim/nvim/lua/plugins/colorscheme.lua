@@ -1,3 +1,4 @@
+-- copy from https://github.com/folke/dot/blob/master/nvim/lua/plugins/colorscheme.lua
 return {
     { "shaunsingh/oxocarbon.nvim" },
     { "ellisonleao/gruvbox.nvim" },
