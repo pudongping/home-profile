@@ -50,7 +50,6 @@
   "playground": { "branch": "master", "commit": "ba48c6a62a280eefb7c85725b0915e021a1a0749" },
   "plenary.nvim": { "branch": "master", "commit": "9ce85b0f7dcfe5358c0be937ad23e456907d410b" },
   "rose-pine": { "branch": "main", "commit": "e29002cbee4854a9c8c4b148d8a52fae3176070f" },
-  "styler.nvim": { "branch": "main", "commit": "d5b7e43af4fdaa06e4175c84f4f57b633ae7e6ff" },
   "telescope.nvim": { "branch": "master", "commit": "84d53dfdbefbdf84e861a288abc71ef8ccafd04e" },
   "todo-comments.nvim": { "branch": "main", "commit": "3094ead8edfa9040de2421deddec55d3762f64d1" },
   "tokyonight.nvim": { "branch": "main", "commit": "8e670218651eaf02bf61c68ecdfdaa572bc14b47" },
