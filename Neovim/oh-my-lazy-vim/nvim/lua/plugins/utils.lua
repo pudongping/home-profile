@@ -1,4 +1,5 @@
 return {
+
     {
         --"rhysd/accelerated-jk",
         "rainbowhxch/accelerated-jk.nvim",
@@ -25,6 +26,32 @@ return {
                 animation = { enable = false, duration = 150 },
             })
         end,
+    },
+
+    -- 快速在多个 windows 中间跳转
+    {
+        "s1n7ax/nvim-window-picker",
+        opts = {
+            filter_rules = {
+                include_current_win = true,
+                bo = {
+                    filetype = { "neo-tree" },
+                    buftype = { "terminal" },
+                },
+            },
+        },
+        keys = {
+            {
+                "<c-w>p", -- 多窗口时，先按 `Ctrl+w` 然后按小写字母 `p`，然后根据窗口上提示的字母，按下对应的字母，即可切换窗口
+                function()
+                    local window_number = require("window-picker").pick_window()
+                    if window_number then
+                        vim.api.nvim_set_current_win(window_number)
+                    end
+                end,
+                desc = "picker a window"
+            },
+        },
     },
 
 }

@@ -8,7 +8,7 @@ return {
         priority = 1000,
         opts = function()
             return {
-                style = "storm",
+                style = "storm", -- 使用 storm 主题皮肤
                 -- transparent = true,
                 -- styles = {
                 --   sidebars = "transparent",
