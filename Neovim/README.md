@@ -86,6 +86,15 @@ ls -al $HOME/.config | grep nvim
 cd $HOME/.config && rm -rf nvim
 ```
 
+## 如何卸载掉所有的插件？
+
+```bash
+# 直接删除掉文件即可
+cd ~/.local/share && rm -rf nvim
+cd ~/.local/state && rm -rf nvim
+cd ~/.cache && rm -rf nvim
+```
+
 ## 小技巧
 
 - 光标位于某个硬盘路径，按键盘 `gf` 两个字母时，可以直接使用 nvim 直接打开。然后可以通过 `Ctrl+o` 回退回来。光标对着网址路径，按键盘 `gx` 两个字母时，可以直接使用浏览器打开。可以通过 `Ctrl+i` 反向跳转。
@@ -98,6 +107,10 @@ cd $HOME/.config && rm -rf nvim
 | :LspInfo | 查看当前使用的 LSP       | n |
 | :e filename                                                         | 以 buffer 的形式打开新文件 | n |
 | Ctrl+w 然后 h、j、k、l                                                   | 在分屏下上下左右切换屏幕      | n |
+| w | 往右以单词跳转 | n |
+| b | 往左以单词跳转 | n |
+| 0 「数字零」 | 快速跳转到行首 | n |
+| $ | 快速跳转到行尾 | n |
 
 
 ## 特定某些插件
