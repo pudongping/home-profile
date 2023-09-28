@@ -6,7 +6,7 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	dependencies = {
 		"williamboman/mason.nvim", -- Mason （安装 lsp 的管理工具）
-		"williamboman/mason-lspconfig",
+		"williamboman/mason-lspconfig.nvim",
 		"folke/neoconf.nvim", -- 美化 LSP （默认会创建一个 ~/.config/nvim/.neoconf.json 文件）
 		"folke/neodev.nvim", -- 可以正确识别 vim 的一些 api
 		{
@@ -32,7 +32,6 @@ return {
 			dockerls = {},
 			docker_compose_language_service = {},
 			bashls = {},
-			ocamllsp = {},
 			taplo = {},
 			ruff_lsp = {},
 			clangd = {},
@@ -40,7 +39,7 @@ return {
 				-- https://neovim.io/doc/user/lsp.html
 				cmd = { "gopls" },
 				filetypes = { "go", "gomod", "gowork", "gotmpl" },
-				root_dir = vim.fs.dirname(vim.fs.find({ "go.work", "go.mod", ".git" }, { upward = true })[1]),
+				--root_dir = vim.fs.dirname(vim.fs.find({'go.work', 'go.mod', '.git'}, { upward = true })[1]),
 				settings = {
 					gopls = {
 						completeUnimported = true, -- 当我们使用一些 package 时，它会自动导入
@@ -48,6 +47,16 @@ return {
 						analyses = {
 							unusedparams = true, -- 有任何未使用的参数或函数，将会得到一个 warning
 						},
+					},
+				},
+				docs = {
+					description = [[
+https://github.com/golang/tools/tree/master/gopls
+
+Google's lsp server for golang.
+]],
+					default_config = {
+						root_dir = [[root_pattern("go.work", "go.mod", ".git")]],
 					},
 				},
 			},
@@ -78,7 +87,7 @@ return {
 			nmap("<leader>da", require("telescope.builtin").diagnostics, "[D]i[A]gnostics")
 			nmap("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
 			-- nmap('gr', vim.lsp.buf.references, '[G]oto [R]eferences')
-			nmap("<space>f", function() -- 格式化代码
+			nmap("<space>f", function() -- 格式化代码（快速按一下 `空格键+f` 组合键）
 				vim.lsp.buf.format({ async = true })
 			end, "[F]ormat code")
 		end
