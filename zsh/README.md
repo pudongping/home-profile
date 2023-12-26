@@ -15,8 +15,7 @@ cat ~/.zshrc | grep -v '#' | grep -v '^$'
 
 我的配置文件中，有依赖于其他的工具。因此使用前，也得先安装依赖软件。
 
-### [Homebrew](https://github.com/Homebrew/brew)
-
-### [nvm](https://github.com/nvm-sh/nvm)
-
-### [gvm](https://github.com/moovweb/gvm)
+- [Homebrew](https://github.com/Homebrew/brew)：macOS 上的包管理器
+- [nvm](https://github.com/nvm-sh/nvm)：Node.js 的版本管理器
+- [gvm](https://github.com/moovweb/gvm)：Go 的版本管理器
+- [pyenv](https://github.com/pyenv/pyenv)：Python 的版本管理器

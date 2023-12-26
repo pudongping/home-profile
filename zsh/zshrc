@@ -25,18 +25,7 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 
 ######################################
 
-# func
-function gitam() {
-    if [ -z "$1" ]; then
-        echo "Please provide a commit message."
-        return 1
-    fi
-    git add -A && git commit -sm "$1"
-}
-
-######################################
-
-# set nvim
+# set nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -48,6 +37,18 @@ export NVM_DIR="$HOME/.nvm"
 
 ######################################
 
+# set pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+######################################
+
 # alias
 # 终端代理
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+
+######################################
+
+# 引入自己的工具函数
+source ~/my_func_tools.sh
