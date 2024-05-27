@@ -47,3 +47,18 @@
 ## 在控制中心显示键盘亮度
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14623749-c8aed471a80a43d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 安装字体
+
+有时候需要用 ps 做点儿图啥的，就会涉及到使用一些比较美观的字体，一般用的比较多的就是这些字体：
+
+- [MiSans](https://hyperos.mi.com/font/zh/details/sc/)：小米的一款字体，全球免费商用字体；
+- [阿里妈妈数黑体](https://www.alibabafonts.com/#/more)：阿里妈妈·智造字自产自研打造了第一款 AI 字体产品 ，数黑体是永久免费正版商用字体，将对全社会免费开放使用。
+
+安装方式：打开「字体册」——「我的字体」—— 右键「将字体添加到“我的字体”」——选择下载的字体。
+
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-b79b08d8849d4d8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+已经装完了的字体
+
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-0f9020591dfa211e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
