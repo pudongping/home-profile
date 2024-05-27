@@ -2,11 +2,19 @@ home-profile
 
 自己本地开发环境所需要的软件及其配置信息，方便拿到一台新电脑时可以快速搭建开发环境。
 
-# 一定要先备份的文件
+>我的 Mac 版本为 **MacBook Pro（16 英寸，2019 年）**   
+系统版本为：**macOS Sonoma 14.5**
+
+如果你是想将一台 Mac 进行重装系统，那么则**十分建议**以下文件或者目录，你需要先进行备份。
 
 1. `~/.gitconfig` Git 的配置文件
 2. `~/.ssh` SSH 的密钥目录
 3. `~/.config` 一些软件的个人配置目录
+
+有一些不太好下载的软件，我都放到网盘里面了，有需要的童鞋们可以自取。
+
+链接: https://pan.baidu.com/s/1l9sYQ4ufg6STarTT0IOygQ?pwd=7526   
+提取码: 7526
 
 # 初始化设置
 
@@ -20,6 +28,8 @@ home-profile
 - 网易有道翻译
 - WPS Office
 - FastZip
+- XMind
+- 网络调试助手
 
 ## 下载 Chrome 浏览器
 
@@ -129,7 +139,7 @@ tldr tar
 
 [详见](./NVM)
 
-## 下载 [Charles](https://www.charlesproxy.com/latest-release/download.do)
+## 下载抓包工具 [Charles](https://www.charlesproxy.com/latest-release/download.do)
 
 [详见](./Charles)
 
@@ -139,3 +149,82 @@ Sensei 拥有带数据图表的仪表板，应用卸载，磁盘系统清理，�
 
 性能仪表板，详细的电池报告程序，磁盘清洁器，热仪表板，主题支持，应用程序卸载程序，详细的硬件信息，温度监视器，GPU监视器，性能优化的，CPU监视器，定制设计，RAM监视器，详细的显示报告器，HDD / SSD SMART Reporter，100％本机代码，风扇控制，详细的GPU / eGPU报告器，磁盘运行状况分析器，磁盘基准测试，电池运行状况分析器，磁盘监视器，暗色模式。
 
+## 下载 RESP.app
+
+Redis 的一款 GUI （以前称为 RedisDesktopManager）
+GitHub 地址为 `https://github.com/RedisInsight/RedisDesktopManager`  
+官网地址为 `https://redis.io/insight/`
+
+官方下载貌似还需要填写邮箱地址，我是直接通过 `https://foxirj.com/resp-mac.html` 进行下载的。
+
+## 下载 Navicat Premium
+
+下载地址：`https://xclient.info/s/navicat-premium.html`
+
+Navicat Premium 结合了其他 Navicat 成员的功能。有了不同数据库类型的连接能力，Navicat Premium 支持在 MySQL、SQL Server、SQLite、Oracle 及 PostgreSQL 之间传输数据。包括存储过程，事件，触发器，函数，视图等。
+
+可能会出现类似于“xxx.app已损坏,打不开.你应该将它移到废纸篓”的问题，解决方案是：
+
+```bash
+sudo xattr -d com.apple.quarantine /Applications/Navicat\ Premium.app
+```
+
+## 下载 BetterTouchTool
+
+官网下载地址：`https://folivora.ai/`  
+我的下载地址：`https://xclient.info/s/bettertouchtool.html`
+
+[详见](./BetterTouchTool)
+
+## 下载 Transmit
+
+我的下载地址：`https://xclient.info/s/transmit.html`
+
+Transmit 是一款功能齐全的 FTP 客户端。兼容 FTP，SFTP 和 TLS/SSL 协议，提供比 Finder 更加迅速的 iDisk 账户接入。与此同时，用户还可以通过 Transmit 在任意应用程序中无须下载即可实时编辑文档，方便简洁，一步到位。
+
+## 下载 Tuxera
+
+我的下载地址：`https://xclient.info/s/tuxera-ntfs.html`
+
+官网下载地址：`https://ntfsformac.tuxera.com/` 提供了 14 天免费试用期。
+
+Mac OS X 不支持对微软 Windows 格式的 NTFS卷的写入。Tuxera NTFS for Mac 是专门为 Mac用户提供的专业 NTFS 驱动软件, Tuxera NTFS for Mac 在提供最快速数据传输的同时，也使用智能缓存层来保护您的数据。
+
+## 下载语雀
+
+官方下载地址：`https://www.yuque.com/download`
+
+## 下载 XtraFinder
+
+超级好用的 Finder 增强工具，重要的是还**免费**！ 但是当前还不支持 Sonoma 14.5 希望后面会早点儿支持吧。
+
+## 下载播放器
+
+### IINA
+
+颜值很高，功能强大，并且还**免费**。
+
+Github 地址：`https://github.com/iina/iina`  
+下载地址：`https://iina.io/`
+
+### Movist Pro
+
+一款CPU占用率低的高清多格式媒体播放器，但是是**收费**。
+
+我的下载地址：`https://xclient.info/s/movist.html`
+
+## ToDesk
+
+官网下载地址：`https://www.todesk.com/`
+
+## Motrix
+
+免费开源的一款全能的下载工具，支持下载 HTTP、FTP、BT、磁力链接等资源
+
+官网下载地址：`https://motrix.app/zh-CN/`
+
+## LICEcap
+
+LICEcap 是一个免费的可以捕获桌面的某个区域并将其直接保存为 .GIF 的软件。
+
+官网下载地址：`https://www.cockos.com/licecap/`

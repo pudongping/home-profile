@@ -1,1 +1,1 @@
-官网地址：`https://code.visualstudio.com/Download`
+官网地址：`https://code.visualstudio.com/Download` 需要注意得按照不同的系统版本去下载。

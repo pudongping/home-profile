@@ -33,7 +33,7 @@ export NVM_DIR="$HOME/.nvm"
 ######################################
 
 # set gvm
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 ######################################
 
@@ -47,8 +47,12 @@ eval "$(pyenv init -)"
 # alias
 # 终端代理
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+# 取消终端代理
+alias unproxy='unset https_proxy http_proxy all_proxy'
 
 ######################################
 
 # 引入自己的工具函数
-source ~/my_func_tools.sh
+# 设置 home-profile 目录
+export HOME_PROFILE_DIR="$HOME/glory/codes/books/home-profile"
+[[ -s "$HOME_PROFILE_DIR/zsh/shell_tools.sh" ]] && source "$HOME_PROFILE_DIR/zsh/shell_tools.sh"

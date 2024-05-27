@@ -11,6 +11,7 @@
 - Material Theme UI
 - PHP Annotations
 - Rainbow Brackets
+- GitHub Copilot
 
 选择 `Material Palenight` 主题。
 

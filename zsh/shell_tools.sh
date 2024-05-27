@@ -1,5 +1,6 @@
-my_func_tools_list() {
-	perl -0777 -ne 'print "$1\t$2\n" while /(\w+)\s*\(\)\s*{ # (.+?)\n/gs' ~/my_func_tools.sh | column -t
+dddd() {
+  echo -e "\033[36m 自定义工具函数如下： \033[0m"
+	perl -0777 -ne 'print "$1\t$2\n" while /(\w+)\s*\(\)\s*{ # (.+?)\n/gs' "$HOME_PROFILE_DIR/zsh/shell_tools.sh" | column -t
 }
 
 function tcd() { # 时间戳和日期互转
@@ -52,4 +53,12 @@ function gitam() { # 'git add and commit'
 	fi
 
 	git add -A && git commit -sm "$1"
+}
+
+function gitlog() { # '美化git log'
+  git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+}
+
+function gitlogg() { # `更加详细的打印出git log`
+  git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
 }

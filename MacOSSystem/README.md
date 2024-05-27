@@ -44,4 +44,6 @@
 
 「系统设置」——「键盘」——「输入法」旁边的「编辑」，然后点击底部的加号，扩展了一个「简体双拼」的「小鹤」输入法。
 
-以上就是我自己的 Mac 系统部分的一些设置，后面继续介绍其他软件相关的设置。
+## 在控制中心显示键盘亮度
+
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-c8aed471a80a43d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
