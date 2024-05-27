@@ -12,23 +12,28 @@ plugins=(
 
 ######################################
 
-# Go-Zero
-alias gzgapi="goctl api go -api *.api -dir ../ --style=goZero"
-alias gzgpb="goctl rpc protoc *.proto --go_out=../ --go-grpc_out=../ --zrpc_out=../ --style=goZero"
+# set homebrew
+# 如果是 M1 芯片的 Mac，需要将下面这一行取消注释
+# export PATH="/opt/homebrew/bin:$PATH"
+# 更改 Homebrew 镜像源
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+# 禁用 Homebrew 自动更新
+export HOMEBREW_NO_AUTO_UPDATE=true
 
 ######################################
 
-# set homebrew
-export PATH="/opt/homebrew/bin:$PATH"
-# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
-export HOMEBREW_NO_AUTO_UPDATE=true
+# set php82 最新版的 mac 不再默认安装 php，需要自行安装
+export PATH="/usr/local/opt/php@8.2/bin:$PATH"
+export PATH="/usr/local/opt/php@8.2/sbin:$PATH"
 
 ######################################
 
 # set nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 ######################################
 
@@ -44,11 +49,31 @@ eval "$(pyenv init -)"
 
 ######################################
 
+# 设置默认的 go，因为我本地的 go 是通过 GoLand 安装的，默认安装在 `~/go/sdk` 目录下
+export DEFAULT_GO_VERSION="go1.22.0"
+# 默认存放 go module 的目录
+export GO_MODULE_PATH="$HOME/go/gomodule"
+# 默认存放 go 源码的目录
+export GO_SDK_PATH="$HOME/go/sdk"
+[[ ! -d $GO_MODULE_PATH ]] && mkdir -p $GO_MODULE_PATH
+# 设置默认版本的 GOPATH
+export GOPATH="$GO_MODULE_PATH/$DEFAULT_GO_VERSION"
+[[ ! -d $GOPATH ]] && mkdir -p $GOPATH/{bin,src,pkg}
+# 设置默认版本的 GOROOT
+export GOROOT="$GO_SDK_PATH/$DEFAULT_GO_VERSION"
+export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+
+######################################
+
 # alias
 # 终端代理
 alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 # 取消终端代理
 alias unproxy='unset https_proxy http_proxy all_proxy'
+
+# Go-Zero
+alias gzgapi="goctl api go -api *.api -dir ../ --style=goZero"
+alias gzgpb="goctl rpc protoc *.proto --go_out=../ --go-grpc_out=../ --zrpc_out=../ --style=goZero"
 
 ######################################
 
