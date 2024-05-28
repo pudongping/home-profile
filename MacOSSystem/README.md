@@ -36,6 +36,11 @@
 
 一般我自己的个人习惯是喜欢在自己的家目录中创建一个文件夹，比如，就叫`glory`文件夹，放置我所有的个人文件，然后当我下载文件时，我直接会放在 `~/Downloads` 目录中，这样也就意味着，在我自己的 Mac 中一般之后在这两个文件夹中有我自己的数据，方便我进行备份。
 
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-9b4bb284e93c45d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+打开显示路径栏：「访达」——「显示」——「显示路径栏」    
+打开显示状态栏：「访达」——「显示」——「显示状态栏」
+
 ## 设置输入法
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14623749-7181dc221b135370.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
