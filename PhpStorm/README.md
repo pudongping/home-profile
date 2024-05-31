@@ -12,6 +12,7 @@
 - PHP Annotations
 - Rainbow Brackets
 - GitHub Copilot
+- Protobuf **注意需要禁用 Protocol Buffers 和 gRPC 扩展**，详见：[文档](https://plugins.jetbrains.com/plugin/16422-protobuf)。
 
 选择 `Material Palenight` 主题。
 

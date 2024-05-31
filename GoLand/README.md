@@ -42,6 +42,16 @@ go env -w  GOPROXY=https://goproxy.io,direct
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14623749-3583b1c7dde58ea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+安装 **Protobuf** 扩展，禁用掉默认的 **Protocol Buffers** 扩展和 **gRPC** 扩展，因为这个插件和这两个插件有冲突，详见：[文档](https://plugins.jetbrains.com/plugin/16422-protobuf)
+
+> 个人感觉这个插件比官方的 Protocol Buffers 插件好用。
+
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-0fcade5ad032699b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+关闭掉 `Dependency issues (go list -m -u)` 这一项，否则每当你打开一个项目时都会帮你自动执行 `go list -json -m -u -mod=readonly all` 然后报错 `Fetching dependency updates for xxxxxx` 还是挺烦的哈
+
+![image.png](https://upload-images.jianshu.io/upload_images/14623749-07722fcf26cbbc5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 设置注释前添加空格
 
 ![image.png](https://upload-images.jianshu.io/upload_images/14623749-d9af5eb02c0a1d46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

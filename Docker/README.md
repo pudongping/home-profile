@@ -60,14 +60,17 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer
 
 如果需要使用 protoc 生成 .pb 文件时
 
-```bash
+```shell
 # 安装包管理工具 protoc，下面以 alpine 为例
 apk add protobuf
+
+# 安装 protoc-gen-grpc 插件（如果仅安装 protobuf 包之后执行生成 grpc 代码命令时会报错的话，再考虑安装插件）
+# 如果是生成 php grpc 代码，下载 protobuf 时，会自动下载 grpc_php_plugin 插件，因此不需要多此一举
+apk add grpc
 
 # 使用 protoc 自动生成代码
 #protoc --php_out=plugins=grpc:../grpc user.proto
 protoc --php_out=grpc/ ./proto/*
-
 ```
 
 如果需要使用 php8 时，需要使用 `hyperf/hyperf:8.0-alpine-v3.16-swoole` 镜像。
