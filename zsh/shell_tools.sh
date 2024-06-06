@@ -83,6 +83,7 @@ function websites() { # '打开常用网站'
         "Pexels图片素材 https://www.pexels.com/zh-cn/"
         "就是加速 https://www.94speed.com/"
         "解析Youtube视频地址 https://tomp3.cc/en96j3f"
+        "腾讯交互翻译 https://yi.qq.com/zh-CN/download"
     )
 
     # 定义新的计算字符串长度函数，考虑中文字符
