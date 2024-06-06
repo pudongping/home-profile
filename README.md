@@ -25,7 +25,7 @@ home-profile
 ## App Store 可以直接下载的软件
 
 - [有道云笔记](https://note.youdao.com/note-download)
-- 网易有道翻译
+- 网易有道翻译（可以使用 [Easydict](https://github.com/tisfeng/Easydict) 来代替）
 - WPS Office
 - FastZip
 - XMind
@@ -95,6 +95,14 @@ brew install tldr
 tldr tar
 ```
 
+## 安装 [Easydict](https://github.com/tisfeng/Easydict)
+
+```bash
+# 一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。
+# 瞬间就觉得「有道翻译」不香了 哈哈
+brew install --cask easydict
+```
+
 ## 下载 IDEs
 
 官网下载地址：`https://www.jetbrains.com/ides/`  
@@ -124,6 +132,11 @@ tldr tar
 [详见](./VS-Code)
 
 ## 下载 Docker Desktop
+
+这里需要说明一下，**完全**可以使用 [OrbStack](https://github.com/orbstack/orbstack) 来代替 Docker Desktop，
+OrbStack 它不会像 Docker Desktop 一样占用大量的内存。它的打开速度和资源占用都比 Docker Desktop 要好很多。
+
+https://github.com/orbstack/orbstack
 
 [详见](./Docker)
 
