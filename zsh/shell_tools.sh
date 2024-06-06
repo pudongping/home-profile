@@ -62,3 +62,64 @@ function gitlog() { # '美化git log'
 function gitlogg() { # `更加详细的打印出git log`
   git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
 }
+
+function websites() { # '打开常用网站'
+    # 构造数组包含网站和网址信息
+    sites=(
+        "JSON-to-Go https://mholt.github.io/json-to-go/"
+        "PHP-to-GoLang https://www.php2golang.com/method/function.in-array.html"
+        "Go-pkg-Documents https://pkg.go.dev/"
+        "Go-by-Example https://books.studygolang.com/gobyexample/"
+        "Go在线工具 http://www.gotool.top/"
+        "在线crontab https://tooltt.com/crontab/c/38.html"
+        "在线正则表达式全集 https://tool.oschina.net/uploads/apidocs/jquery/regexp.html"
+        "LOGO在线设计制作工具 https://www.uugai.com/"
+        "TinyPNG图片压缩 https://tinify.cn/"
+        "分流抢票工具 https://www.bypass.cn/"
+        "站长工具 https://tool.chinaz.com/"
+        "Json.cn https://www.json.cn/"
+        "阿里云开发者社区 https://developer.aliyun.com/my"
+        "腾讯云开发者社区 https://cloud.tencent.com/developer/creator/article"
+        "Pexels图片素材 https://www.pexels.com/zh-cn/"
+        "就是加速 https://www.94speed.com/"
+        "解析Youtube视频地址 https://tomp3.cc/en96j3f"
+    )
+
+    # 定义新的计算字符串长度函数，考虑中文字符
+    get_string_length() {
+        local str="$1"
+        local len=$(echo -n "$str" | wc -c)  # UTF-8字符长度计算
+        echo $len
+    }
+
+    # 计算每列的最大长度
+    max_length_site=0
+    max_length_url=0
+    for entry in "${sites[@]}"; do
+        site=$(echo $entry | cut -d' ' -f1)
+        url=$(echo $entry | cut -d' ' -f2)
+        len_site=$(get_string_length "$site")
+        len_url=$(get_string_length "$url")
+
+        if (( len_site > max_length_site )); then
+            max_length_site=$len_site
+        fi
+
+        if (( len_url > max_length_url )); then
+            max_length_url=$len_url
+        fi
+    done
+
+    # 打印表头
+    printf "| %-5s | %-*s | %-*s |\n" "序号" $max_length_site "网站" $max_length_url "网址"
+    printf "|-------|-%-*s-|-%-*s-|\n" $max_length_site "" $max_length_url ""
+
+    # 打印内容
+    idx=1
+    for entry in "${sites[@]}"; do
+        site=$(echo $entry | cut -d' ' -f1)
+        url=$(echo $entry | cut -d' ' -f2)
+        printf "| %-5s | %-*s | %-*s |\n" "$idx" $max_length_site "$site" $max_length_url "$url"
+        ((idx++))
+    done
+}
