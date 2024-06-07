@@ -133,10 +133,9 @@ brew install --cask easydict
 
 ## 下载 Docker Desktop
 
-这里需要说明一下，**完全**可以使用 [OrbStack](https://github.com/orbstack/orbstack) 来代替 Docker Desktop，
+这里需要说明一下，可以使用 [OrbStack](https://github.com/orbstack/orbstack) 来代替 Docker Desktop，
 OrbStack 它不会像 Docker Desktop 一样占用大量的内存。它的打开速度和资源占用都比 Docker Desktop 要好很多。
-
-https://github.com/orbstack/orbstack
+貌似 OrbStack 也比较强大，还有其他的一些功能。**但是**我感觉用不上那么多，并且我觉得 Docker Desktop 也还行，就没有使用 OrbStack。
 
 [详见](./Docker)
 
