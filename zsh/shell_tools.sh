@@ -84,6 +84,14 @@ function websites() { # '打开常用网站'
         "就是加速 https://www.94speed.com/"
         "解析Youtube视频地址 https://tomp3.cc/en96j3f"
         "腾讯交互翻译 https://yi.qq.com/zh-CN/download"
+        "Excalidraw漫画风格画图工具 https://excalidraw.com/"
+        "PlantUML创建各种图表 https://plantuml.com/zh/"
+        "draw.io流程图绘画工具 https://app.diagrams.net/"
+        "ProcessOn在线流程图思维导图 https://www.processon.com/"
+        "httpbin.org https://httpbin.org/"
+        "webfx表情包 https://www.webfx.com/tools/emoji-cheat-sheet/"
+        "EmojiAll表情包 https://www.emojiall.com/zh-hans/all-emojis"
+        "比特虫在线制作ico图标 https://www.bitbug.net/"
     )
 
     # 定义新的计算字符串长度函数，考虑中文字符
