@@ -13,8 +13,8 @@ home-profile
 
 有一些不太好下载的软件，我都放到网盘里面了，有需要的童鞋们可以自取。
 
-链接: https://pan.baidu.com/s/1l9sYQ4ufg6STarTT0IOygQ?pwd=7526   
-提取码: 7526
+链接: https://pan.baidu.com/s/1XH6faYvxb-WJ4tu4QZRBCQ?pwd=fdvw  
+提取码: fdvw  
 
 # 初始化设置
 
