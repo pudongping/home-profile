@@ -9,6 +9,15 @@ brew install php@8.2
 添加进环境变量中
 
 ```bash
+# 如果你的 Mac 芯片是 intel 的，可能需要执行
 echo 'export PATH="/usr/local/opt/php@8.2/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/php@8.2/sbin:$PATH"' >> ~/.zshrc
+
+# 如果你的 Mac 芯片是 m 系列的，可能你需要执行
+echo 'export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"' >> ~/.zshrc
+export LDFLAGS="-L/opt/homebrew/opt/php@8.2/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include
+
+# 具体需要如何执行，就需要看安装完毕之后的提示信息是怎样的
 ```

@@ -16,6 +16,8 @@ home-profile
 链接: https://pan.baidu.com/s/1XH6faYvxb-WJ4tu4QZRBCQ?pwd=fdvw  
 提取码: fdvw  
 
+> 如果链接失效了，可以关注公众号「左诗右码」找到我的联系方式，然后私信找我要。
+
 # 初始化设置
 
 - [MacOS系统级别的设置](./MacOSSystem)
@@ -25,7 +27,6 @@ home-profile
 ## App Store 可以直接下载的软件
 
 - [有道云笔记](https://note.youdao.com/note-download)
-- 网易有道翻译（可以使用 [Easydict](https://github.com/tisfeng/Easydict) 来代替）
 - WPS Office
 - FastZip
 - XMind
@@ -51,10 +52,6 @@ home-profile
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-## 配置 git
-
-[详见](./Git)
-
 ## 安装 oh-my-zsh
 
 [详见](./oh-my-zsh)
@@ -62,6 +59,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 ## 安装 Homebrew
 
 [详见](./Homebrew)
+
+## 配置 git
+
+[详见](./Git)
 
 ## 安装 wget
 
