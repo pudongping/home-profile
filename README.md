@@ -157,19 +157,26 @@ OrbStack 它不会像 Docker Desktop 一样占用大量的内存。它的打开�
 
 [详见](./Charles)
 
-## 下载 [Sensei](https://xclient.info/s/sensei.html)
+## 下载软件清理、系统管理工具
+
+### 下载 [Sensei](https://xclient.info/s/sensei.html)
 
 Sensei 拥有带数据图表的仪表板，应用卸载，磁盘系统清理，启动项管理，电池健康管理（包含详细的电池报告），散热详细的硬件信息、图表及报告，温度监控模块（当前版本不支持）、GPU/显示器详细报告、性能优化、CPU监控、RAM内存监视、磁盘监视、风扇控制、磁盘基准、电池健康分析、启动速度优化、分区图管理等等功能。
 
 性能仪表板，详细的电池报告程序，磁盘清洁器，热仪表板，主题支持，应用程序卸载程序，详细的硬件信息，温度监视器，GPU监视器，性能优化的，CPU监视器，定制设计，RAM监视器，详细的显示报告器，HDD / SSD SMART Reporter，100％本机代码，风扇控制，详细的GPU / eGPU报告器，磁盘运行状况分析器，磁盘基准测试，电池运行状况分析器，磁盘监视器，暗色模式。
 
-## 下载 [alienator88/Pearcleaner](https://github.com/alienator88/Pearcleaner)
+### 下载 [alienator88/Pearcleaner](https://github.com/alienator88/Pearcleaner)
 
 一款免费的 Mac 软件清理工具。
 
 ```bash
 brew install pearcleaner
 ```
+
+### 下载 [腾讯柠檬清理](https://lemon.qq.com/)
+
+这是一款腾讯出品的少有的**免费且无广告**的 Mac 清理工具，可以清理垃圾文件、重复文件、大文件、卸载软件等。功能类似于 `CleanMyMac` 主要是**免费**。 
+这款软件可以在 App Store 上下载。但是**十分建议一定要去官网上面下载「完整版」，功能更加强大，因为 App Store 上的功能有阉割**。
 
 ## 下载 RESP.app
 
