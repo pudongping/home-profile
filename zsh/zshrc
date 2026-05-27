@@ -17,6 +17,7 @@ plugins=(
 # export PATH="/opt/homebrew/bin:$PATH"
 # 更改 Homebrew 镜像源
 # export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 # 禁用 Homebrew 自动更新
 export HOMEBREW_NO_AUTO_UPDATE=true
 
@@ -50,24 +51,30 @@ eval "$(pyenv init -)"
 ######################################
 
 # 设置默认的 go，因为我本地的 go 是通过 GoLand 安装的，默认安装在 `~/go/sdk` 目录下
-export DEFAULT_GO_VERSION="go1.22.0"
+export DEFAULT_GO_VERSION="go1.25.5"
 # 默认存放 go module 的目录
 export GO_MODULE_PATH="$HOME/go/gomodule"
 # 默认存放 go 源码的目录
 export GO_SDK_PATH="$HOME/go/sdk"
-[[ ! -d $GO_MODULE_PATH ]] && mkdir -p $GO_MODULE_PATH
+[[ ! -d "$GO_MODULE_PATH" ]] && mkdir -p "$GO_MODULE_PATH"
 # 设置默认版本的 GOPATH
-export GOPATH="$GO_MODULE_PATH/$DEFAULT_GO_VERSION"
-[[ ! -d $GOPATH ]] && mkdir -p $GOPATH/{bin,src,pkg}
+if [ -z "$GOPATH" ]; then
+  export GOPATH="$GO_MODULE_PATH/$DEFAULT_GO_VERSION"
+  [[ ! -d "$GOPATH" ]] && mkdir -p "$GOPATH"/{bin,src,pkg}
+fi
 # 设置默认版本的 GOROOT
-export GOROOT="$GO_SDK_PATH/$DEFAULT_GO_VERSION"
-export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+if [ -z "$GOROOT" ]; then
+  export GOROOT="$GO_SDK_PATH/$DEFAULT_GO_VERSION"
+fi
+if [[ -n "$GOROOT" && -n "$GOPATH" ]]; then
+  export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+fi
 
 ######################################
 
 # alias
 # 终端代理
-alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+alias proxy='export https_proxy=http://127.0.0.1:7892 http_proxy=http://127.0.0.1:7892 all_proxy=socks5://127.0.0.1:7892'
 # 取消终端代理
 alias unproxy='unset https_proxy http_proxy all_proxy'
 
