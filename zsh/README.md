@@ -17,5 +17,3 @@ cat ~/.zshrc | grep -v '#' | grep -v '^$'
 
 - [Homebrew](https://github.com/Homebrew/brew)：macOS 上的包管理器
 - [nvm](https://github.com/nvm-sh/nvm)：Node.js 的版本管理器
-- [gvm](https://github.com/moovweb/gvm)：Go 的版本管理器
-- [pyenv](https://github.com/pyenv/pyenv)：Python 的版本管理器

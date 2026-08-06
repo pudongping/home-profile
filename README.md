@@ -141,9 +141,9 @@ OrbStack 它不会像 Docker Desktop 一样占用大量的内存。它的打开�
 
 [详见](./Docker)
 
-## 下载 postman
+## 下载 Apifox
 
-官网下载地址：`https://www.postman.com/downloads/`
+官网下载地址：`https://apifox.com/`
 
 ## 安装 PHP8.2
 

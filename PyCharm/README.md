@@ -1,4 +1,73 @@
-## 安装 pyenv
+# UV
+
+现在主流的就用 uv 了，也就是说可以不用 `pyenv` 和 `pipenv` 了，直接用 uv 来管理 python 的版本和虚拟环境。
+
+## 安装
+
+```bash
+# macOS and Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+初始化当前项目
+
+```bash
+uv init
+```
+
+安装多个 python 版本
+
+```bash
+uv python install 3.10 3.11 3.12
+
+# 安装最新的 python 版本
+uv python install
+
+# 查看可用的和已安装的 python 版本
+uv python list
+```
+
+在当前目录中使用特定的 python 版本
+
+```bash
+uv python pin 3.12
+```
+
+## 运行项目
+
+```bash
+uv run main.py
+```
+
+## 管理依赖项
+
+添加依赖包
+
+```bash
+uv add requests
+
+# 安装指定版本
+uv add 'requests==2.31.0'
+
+# 更换替代源 Git 依赖项
+uv add git+https://github.com/psf/requests
+```
+
+移除依赖包
+
+```bash
+uv remove requests
+```
+
+升级依赖包
+
+```bash
+uv lock --upgrade-package requests
+```
+
+# 安装 pyenv
+
+- [pyenv](https://github.com/pyenv/pyenv)：Python 的版本管理器
 
 方便管理多个版本的 python
 
@@ -16,7 +85,7 @@ pyenv versions
 pyenv version
 ```
 
-### 添加环境变量
+## 添加环境变量
 
 ```bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
@@ -24,7 +93,7 @@ echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zsh
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
-### 通过 pyenv 安装指定版本的 python
+## 通过 pyenv 安装指定版本的 python
 
 这里以安装 python 3.8.18 为示例，其他版本只需要更换版本号即可。
 
@@ -36,7 +105,7 @@ pyenv install 3.8.18
 pyenv rehash
 ```
 
-## 安装 pipenv
+# 安装 pipenv
 
 方便对每一个项目创建虚拟环境。
 

@@ -55,6 +55,10 @@ function gitam() { # 'git add and commit'
 	git add -A && git commit -sm "$1"
 }
 
+function gitamend() { # 'git 合并最近一条提交'
+  git add -A && git commit --amend
+}
+
 function gitlog() { # '美化git log'
   git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 }
