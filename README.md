@@ -32,6 +32,7 @@ home-profile
 - FastZip
 - XMind
 - 网络调试助手
+- Redis Insight
 
 ## 下载 Chrome 浏览器
 
@@ -178,13 +179,15 @@ brew install pearcleaner
 这是一款腾讯出品的少有的**免费且无广告**的 Mac 清理工具，可以清理垃圾文件、重复文件、大文件、卸载软件等。功能类似于 `CleanMyMac` 主要是**免费**。 
 这款软件可以在 App Store 上下载。但是**十分建议一定要去官网上面下载「完整版」，功能更加强大，因为 App Store 上的功能有阉割**。
 
-## 下载 RESP.app
+## 下载 RESP.app（可以用 Redis Insight 进行平替）
 
 Redis 的一款 GUI （以前称为 RedisDesktopManager）
 GitHub 地址为 `https://github.com/RedisInsight/RedisDesktopManager`  
 官网地址为 `https://redis.io/insight/`
 
 官方下载貌似还需要填写邮箱地址，我是直接通过 `https://foxirj.com/resp-mac.html` 进行下载的。
+
+现在 RESP.app 这个软件还可以用，但是貌似发现最后维护的时间是 2022 年了，现在推荐可以使用 `Redis Insight` 这个软件，Redis Insight 是 Redis 官方推出的 GUI 工具，可以直接在 Apple Store 上下载。
 
 ## 下载 Navicat Premium
 
