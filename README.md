@@ -187,7 +187,7 @@ GitHub 地址为 `https://github.com/RedisInsight/RedisDesktopManager`
 
 官方下载貌似还需要填写邮箱地址，我是直接通过 `https://foxirj.com/resp-mac.html` 进行下载的。
 
-现在 RESP.app 这个软件还可以用，但是貌似发现最后维护的时间是 2022 年了，现在推荐可以使用 `Redis Insight` 这个软件，Redis Insight 是 Redis 官方推出的 GUI 工具，可以直接在 Apple Store 上下载。
+现在 RESP.app 这个软件还可以用，但是貌似发现最后维护的时间是 2022 年了，现在推荐可以使用 `Redis Insight` 这个软件，[Redis Insight](https://github.com/redis/RedisInsight) 是 Redis 官方推出的 GUI 工具，可以直接在 Apple Store 上下载。
 
 ## 下载 Navicat Premium
 
