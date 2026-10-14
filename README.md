@@ -38,9 +38,16 @@ home-profile
 
 访问 `https://www.google.cn/chrome/index.html`
 
-## 下载 Clash
+## 下载代理工具
+
+下载 Clash
 
 [详见](./Clash)
+
+或者下载以下代理工具：
+
+- 下载 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
+- 下载 [Clash Party / Mihomo Party](https://github.com/mihomo-party-org/clash-party)
 
 ## 下载 iterm2
 
@@ -158,6 +165,10 @@ OrbStack 它不会像 Docker Desktop 一样占用大量的内存。它的打开�
 
 [详见](./Charles)
 
+## 下载 Proxy Pin
+
+[Proxy Pin](https://github.com/wanghongenpin/proxypin)：是一款全平台开源的抓包与网络分析工具（支持 Android、iOS、Windows、Mac、Linux）
+
 ## 下载软件清理、系统管理工具
 
 ### 下载 [Sensei](https://xclient.info/s/sensei.html)
@@ -260,3 +271,27 @@ Github 地址：`https://github.com/iina/iina`
 LICEcap 是一个免费的可以捕获桌面的某个区域并将其直接保存为 .GIF 的软件。
 
 官网下载地址：`https://www.cockos.com/licecap/`
+
+## NyaTerm
+
+[NyaTerm](https://github.com/nyakang/nyaterm) 是一款基于 Tauri、React 与 Rust 构建的现代远程终端工作区。
+
+NyaTerm 是一个面向 SSH 运维和混合终端工作流的桌面客户端。它使用 React + Tauri 构建界面，由 Rust 后端负责 SSH、SFTP、会话生命周期、认证、网络工具、AI 辅助终端操作、导入导出、诊断、加密同步与备份。
+
+## [WindTerm](https://windterm.io/)
+
+[WindTerm](https://github.com/kingToolbox/WindTerm) 是一款极度强大、完全免费的高性能远程终端（SSH/SFTP）管理工具。流畅度极高、极其省内存。
+
+## RustDesk
+
+[RustDesk](https://github.com/rustdesk/rustdesk) 是一个开源的远程桌面软件，类似于 TeamViewer 和 AnyDesk。它允许用户远程访问和控制其他计算机，支持跨平台使用，包括 Windows、macOS、Linux、iOS 和 Android。
+
+## Parsec
+
+[Parsec](https://parsec.app/) 是一个远程桌面应用程序，专为游戏和高性能应用程序设计。它允许用户通过互联网连接到远程计算机，以低延迟和高帧率进行游戏和其他图形密集型任务。
+
+## Tailscale
+
+[Tailscale](https://tailscale.com/download)：是一款基于 WireGuard 协议的虚拟局域网（异地组网）工具。
+
+它是干嘛的：把散落在各地的设备“强行”连接到同一个虚拟局域网内。比如，你人在公司，想要安全地访问家里 NAS 上的相册、或者连接家里没有公网 IP 的电脑，只要在两台设备上登录同一个 Tailscale 账号，两台设备就会像插在同一个路由器上一样，获得一个互通的内网 IP 自动进行加密连接。
