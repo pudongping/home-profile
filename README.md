@@ -40,12 +40,6 @@ home-profile
 
 ## 下载代理工具
 
-下载 Clash
-
-[详见](./Clash)
-
-或者下载以下代理工具：
-
 - 下载 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 - 下载 [Clash Party / Mihomo Party](https://github.com/mihomo-party-org/clash-party)
 
